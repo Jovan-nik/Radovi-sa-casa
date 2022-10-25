@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Teskstualni tip podataka</h1>
+    <h2 id="prom"></h2>
+    <h2 id="prim2"></h2>
+    <h2 id="prim3"></h2>
+    <h2 id="prim4"></h2>
+    <h2 id="prim5"></h2>
+    <h2 id="prim6"></h2>
+    <script>
+        var a="Lep je dan i Sanja ide u Novi Sad";
+        var b;
+
+        document.getElementById("prom").innerHTML=a;
+        b=a.toUpperCase();
+        document.getElementById("prim2").innerHTML="Ispisano velikim slovima:"+b;
+        var c=a.toLowerCase();
+        document.getElementById("prim3").innerHTML="Ispisano malim slovima:" +c;
+        var f=a.replace("Sanja","Veljko");
+        document.getElementById("prim4").innerHTML=f;
+        var e=a.length;
+        document.getElementById("prim5").innerHTML="Broj karaktera u recnici je:"+e;
+        var z=a.charAt(4);
+        document.getElementById("prim6").innerHTML="Karakter na 5. mestu je:"+z;
+    </script>
+</body>
+
+</html>

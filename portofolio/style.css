@@ -1,0 +1,40 @@
+body{
+    margin:auto;
+    width:600px;
+}
+.logo{
+    width:250px;
+height:250px;    
+}
+main article{
+    background-color: #233771;
+}
+.plavo{
+    color: #0fbfdf;
+}
+.sivo{
+    color: #bbbdc0;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 18px;
+}
+h3{
+    font-size: 18px;
+}
+.sara{
+    color: blue;
+}
+ul {
+    list-style: none;
+  }
+  ul li::before {
+    content: "\2022";
+    color: #0fbfdf;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }

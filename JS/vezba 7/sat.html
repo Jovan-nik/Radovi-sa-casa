@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sat</title>
+</head>
+<body>
+
+    <h1 id="demo"></h1>
+
+    <footer>
+
+        <p></p>
+
+    </footer>
+
+    <script>
+
+        var vreme_global = new Date();
+
+        var sati_global = vreme_global.getHours();
+        var minuti_global = vreme_global.getMinutes();
+        var sekunde_global = vreme_global.getSeconds();
+
+        if(sati_global>=11 && sati_global<=23){
+            alert("Vreme je " + sati_global + ":" + minuti_global + ":" + sekunde_global + " PM");
+        }
+        else{
+            alert("Vreme je " + sati_global + ":" + minuti_global + ":" + sekunde_global + " AM");
+        }
+
+        function sat(){
+
+            var vreme = new Date();
+
+            var sati = vreme.getHours();
+            var minuti = vreme.getMinutes();
+            var sekunde = vreme.getSeconds();
+
+            if(sati>=11 && sati <=23){
+                document.getElementById("demo").innerHTML = sati + ":" + minuti + ":" + sekunde + " PM";
+            }
+            else{
+                document.getElementById("demo").innerHTML = sati + ":" + minuti + ":" + sekunde + " AM";
+            }
+
+        }
+
+        setInterval(sat,1000);
+
+        function footer(){
+
+            var vreme_footer = new Date();
+            var godina = vreme_footer.getFullYear();
+
+            var godinaOsnivanja = new Date(2005 , 6);
+            var pocetnaGodina = godinaOsnivanja.getFullYear();
+
+            document.querySelector('footer').firstElementChild.innerHTML = "Copyright " + pocetnaGodina + "-" + godina;
+
+        }
+
+        window.onload = footer();
+
+    </script>
+    
+</body>
+</html>

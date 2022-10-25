@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objekti</h1>
+    <p id="prvo"></p>
+    <p id="drugo"></p>
+    <script>
+        var ucenik1 = {
+        ime:"Jovan Nikodinovic",
+         tel:"066231002",
+         razred:1
+        };
+        var ucenik2 = {
+            ime:"Petar Petrovic Njegos",
+            tel:"0675601239",
+            razred:4
+        };
+       
+        document.getElementById("prvo").innerHTML="Ucenik "+ ucenik1.ime +" je sada "+(ucenik1.razred+1)+". "+"razred .";
+    // var ucenik={
+       /*     licnipodaci{ime:"Jovan Nikodinovic", tel:"066231002"},
+            skola{
+                razred:6,
+                ocene:{ 
+                    srpski:5,
+                    fizika:5
+                },
+                izostanci{ 
+                    opravdani:21, 
+                    neopravdani:1
+                }
+            }
+
+        }
+        document.getElementById("drugo").innerHTML="Ucenik "+ucenik.licnipodaci.ime +" ima "+(ucenik.skola.izostanci.opravdani)+" opravdanih casova.";*/
+    </script>
+</body>
+
+</html>

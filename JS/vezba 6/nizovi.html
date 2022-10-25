@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nizovi</title>
+</head>
+<body>
+    <p id="ispis"></p>
+    <p id="broj_el"></p>
+    <p id="peti"></p>
+    <p id="bez"></p>
+    <p id="sort"></p>
+    <p id="crta"></p>
+    <p id="jeca"></p>
+    <p id="poslednji"></p>
+    <p id="izbacen"></p>
+    <script>
+
+        var niz=["nikola","reks","marina","sofija","luka","dimdzo","jagoda","marusa","mali","oblanda","david"];
+        document.getElementById("ispis").innerHTML=niz;
+        document.getElementById("broj_el").innerHTML=niz.length;
+        document.getElementById("peti").innerHTML=niz[4];
+        niz.pop(10);
+        document.getElementById("bez").innerHTML=niz;
+        niz.sort();
+        document.getElementById("sort").innerHTML=niz;
+        document.getElementById("crta").innerHTML=niz.join('-');
+        niz[14]="Jelena";
+        document.getElementById("jeca").innerHTML=niz;
+        document.getElementById("poslednji").innerHTML="Poslednji element niza je:"+niz[niz.length-1];
+    </script>
+</body>
+</html>

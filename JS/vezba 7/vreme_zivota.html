@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolko sam dugo ziv</title>
+</head>
+<body>
+    <input type="date" id="datum">
+    <button onclick="godine()">Probaj
+    </button>
+    <p id="dani"></p>
+    <script>
+        function godine(){
+            var datum=new Date(document.getElementById("datum").value);
+        var danas=new Date();
+            var godine=danas.getFullYear()-(datum.getFullYear());
+           document.getElementById("dani").innerHTML="Cestitamo ziv si "+godine+" godina.";
+        }
+        //IZRACUNAJ DANE!!!!!!!
+    </script>
+</body>
+</html>

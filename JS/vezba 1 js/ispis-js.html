@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="tekst"></h1>
+    <p id="ime"></p>
+    <h2 id="ispis"></h2>
+    <p id="rez"></p>
+    <p id="tip"></p>
+    <h3></h3>
+</body>
+<script>
+var name="Jovan Nikodinovic";
+    document.getElementsByTagName("h1")[0].innerHTML="Ovo je moja prva skripta.";
+    document.getElementById("ime").innerHTML="Jovan Nikodinovic";
+     x=7;
+    y=9;
+    var z="4";
+    document.getElementById("tip").innerHTML="Promenljiva x je tipa:"+ typeof(x);
+    document.getElementsByTagName("h3")[0].innerHTML="Promenljiva z je tipa:"+ typeof(z);
+
+   document.getElementById("rez").innerHTML="Rezultat od y-x="+String(y-x)+"<br>Rezultat od x+y+z="+String(x+y+Number(z));
+    document.getElementById("ispis").innerHTML="Ovu skriptu je kreirao "+ name+".";
+
+</script>
+</html>
